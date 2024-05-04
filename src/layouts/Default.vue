@@ -1,12 +1,17 @@
 <template>
   <div class="layout">
     <header class="header">
-      <strong>
+      <!-- <strong>
         <g-link to="/">{{ $static.metadata.siteName }}</g-link>
-      </strong>
+      </strong> -->
+
+
       <nav class="nav">
         <g-link class="nav__link" to="/">Home</g-link>
         <g-link class="nav__link" to="/about/">About</g-link>
+        <g-link class="nav__link" to="/blog/">Blog</g-link>
+        <g-link class="nav__link" to="/projects/">Projects</g-link>
+        <g-link class="nav__link" to="/https://github.com/elisanj23/">Github</g-link>
       </nav>
     </header>
     <slot/>
@@ -30,7 +35,7 @@ body {
 }
 
 .layout {
-  max-width: 760px;
+  max-width: 620px;
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
@@ -46,5 +51,6 @@ body {
 
 .nav__link {
   margin-left: 20px;
+  
 }
 </style>
